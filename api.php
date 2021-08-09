@@ -12,7 +12,6 @@ define('CONFIG_BR', 320);
 define('CONFIG_URL', 'https://tb-net-api.herokuapp.com/api.php');
 header("Access-Control-Allow-Origin: *");
 require 'Meting.php';
-use Metowolf\Meting;
 $server = $_GET['server']??'';
 $type = $_GET['type']??'';
 $id = $_GET['id']??'';
@@ -26,7 +25,7 @@ if (!in_array($type, ['song','album','search','artist','playlist','lrc','url','p
     die('[]');
 }
 
-$api = new Meting($server);
+$api=new \Metowolf\Meting($server);
 $api->format(true);
 if ($server == 'netease') {
     $api->cookie('os=pc; osver=Microsoft-Windows-10-Professional-build-10586-64bit; appver=2.9.1.199099; channel=netease; MUSIC_U=0ff5dbc42a8584a6724f88933a606bcfe82562bbf8998e103d6097dda406efbdb6834a44ed771c0ade39c620ce8469a8; __remember_me=true');
