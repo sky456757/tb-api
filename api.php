@@ -10,7 +10,7 @@
  */
 
 define('CONFIG_BR', 320);
-define('CONFIG_URL', 'http://127.0.0.1/api.php');
+define('CONFIG_URL', 'https://tb-net-api.herokuapp.com/api.php');
 header("Access-Control-Allow-Origin: *");
 
 require '/src/Meting.php';
