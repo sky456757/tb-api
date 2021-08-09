@@ -36,7 +36,7 @@ if ($type=='lrc') {
     $data=$api->lyric($id);
     $data=json_decode($data, true);
     header("Content-Type: application/javascript");
-    echo lrctran($data['lyric']);
+    echo $data['lyric'];
 } elseif ($type=='pic') {
     $data=$api->pic($id, 90);
     $data=json_decode($data, 1);
