@@ -11,10 +11,10 @@
 define('CONFIG_BR', 320);
 define('CONFIG_URL', 'https://tb-net-api.herokuapp.com/api.php');
 header("Access-Control-Allow-Origin: *");
+echo 'server is';
 require '/src/Meting.php';
 echo 'server is';
 use Metowolf\Meting;
-echo 'server is';
 $server = $_GET['server']??'';
 $type = $_GET['type']??'';
 $id = $_GET['id']??'';
