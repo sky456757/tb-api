@@ -60,6 +60,7 @@ if ($type=='lrc') {
         header('Location: https://static.i-meto.com/static/music/empty.mp3');
     }
 } else {
+    echo '{"error":"unknown playlist id"}';
     $data=$api->$type($id);
     $data=json_decode($data, 1);
 
