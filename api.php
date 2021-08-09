@@ -8,12 +8,11 @@
  * Copyright 2017, METO Sheel <i@i-meto.com>
  * Released under the MIT license
  */
-echo 'server is';
 define('CONFIG_BR', 320);
 define('CONFIG_URL', 'https://tb-net-api.herokuapp.com/api.php');
 header("Access-Control-Allow-Origin: *");
-echo 'server is';
 require '/src/Meting.php';
+echo 'server is';
 use Metowolf\Meting;
 echo 'server is';
 $server = $_GET['server']??'';
