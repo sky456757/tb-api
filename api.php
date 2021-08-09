@@ -8,10 +8,11 @@
  * Copyright 2017, METO Sheel <i@i-meto.com>
  * Released under the MIT license
  */
+ini_set('display_errors','off')
 define('CONFIG_BR', 320);
 define('CONFIG_URL', 'https://tb-api.vercel.app');
 header("Access-Control-Allow-Origin: *");
-require_once 'Meting.php';
+require 'Meting.php';
 $server = $_GET['server']??'';
 $type = $_GET['type']??'';
 $id = $_GET['id']??'';
