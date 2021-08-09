@@ -18,6 +18,7 @@ use Metowolf\Meting;
 $server = $_GET['server']??'';
 $type = $_GET['type']??'';
 $id = $_GET['id']??'';
+echo 'server is';
 echo $server;
 if (empty($id)) {
     die('[]');
