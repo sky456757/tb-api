@@ -10,7 +10,7 @@
  */
 ini_set('display_errors','off');
 define('CONFIG_BR', 320);
-define('CONFIG_URL', '');
+define('CONFIG_URL', 'https://tb-api.vercel.app');
 header("Access-Control-Allow-Origin: *");
 require 'Meting.php';
 $server = $_GET['server']??'';
