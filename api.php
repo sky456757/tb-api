@@ -8,7 +8,6 @@
  * Copyright 2017, METO Sheel <i@i-meto.com>
  * Released under the MIT license
  */
-echo 'test';
 define('CONFIG_BR', 320);
 define('CONFIG_URL', 'https://tb-net-api.herokuapp.com/api.php');
 header("Access-Control-Allow-Origin: *");
@@ -19,7 +18,7 @@ use Metowolf\Meting;
 $server = $_GET['server']??'';
 $type = $_GET['type']??'';
 $id = $_GET['id']??'';
-
+echo $server;
 if (empty($id)) {
     die('[]');
 }
