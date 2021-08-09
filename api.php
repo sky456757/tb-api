@@ -10,7 +10,7 @@
  */
 ini_set('display_errors','off');
 define('CONFIG_BR', 320);
-define('CONFIG_URL', 'https://tb-api.vercel.app');
+define('CONFIG_URL', '');
 header("Access-Control-Allow-Origin: *");
 require 'Meting.php';
 $server = $_GET['server']??'';
@@ -36,7 +36,7 @@ if ($type=='lrc') {
     $data=$api->lyric($id);
     $data=json_decode($data, true);
     header("Content-Type: application/javascript");
-    echo lrctran($data['lyric'], $data['tlyric']);
+    echo lrctran($data['lyric']);
 } elseif ($type=='pic') {
     $data=$api->pic($id, 90);
     $data=json_decode($data, 1);
