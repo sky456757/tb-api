@@ -9,7 +9,7 @@
  * Released under the MIT license
  */
 define('CONFIG_BR', 320);
-define('CONFIG_URL', 'https://tb-net-api.herokuapp.com/api.php');
+define('CONFIG_URL', 'https://tb-api.vercel.app');
 header("Access-Control-Allow-Origin: *");
 require 'Meting.php';
 $server = $_GET['server']??'';
