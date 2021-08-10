@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . '/../vendor/autoload.php';
-require __DIR__.'/../api.php';
-require __DIR__.'/../Meting.php';
+require_once __DIR__ . '/../meting/vendor/autoload.php';
+require __DIR__.'/../meting/api.php';
+require __DIR__.'/../meting/Meting.php';
 
 
