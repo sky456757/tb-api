@@ -12,7 +12,7 @@ Latest version always at
  
 // Make this the relative path to the images, like &quot;../img&quot; or &quot;random/images/&quot;.
 // If the images are in the same directory, leave it blank.
-$folder = ' ';
+$folder = 'https://cdn.jsdelivr.net/gh/sky456757/tb-api@main/img';
  
  
 // Space seperated list of extensions, you probably won't have to change this.
