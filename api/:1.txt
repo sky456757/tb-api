@@ -1,0 +1,2 @@
+https://tb-api.vercel.app/random/01.png
+https://tb-api.vercel.app/api/random/02.png
