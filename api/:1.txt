@@ -1,2 +1,10 @@
 https://tb-api.vercel.app/random/01.png
-https://tb-api.vercel.app/api/random/02.png
+https://tb-api.vercel.app/random/02.png
+https://tb-api.vercel.app/random/03.png
+https://tb-api.vercel.app/random/04.png
+https://tb-api.vercel.app/random/05.png
+https://tb-api.vercel.app/random/06.png
+https://tb-api.vercel.app/random/07.png
+https://tb-api.vercel.app/random/08.png
+https://tb-api.vercel.app/random/09.png
+https://tb-api.vercel.app/random/10.png
