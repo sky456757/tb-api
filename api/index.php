@@ -1,4 +1,4 @@
 
 <?php
 
-require '/../index.php';
+require 'img.php';
