@@ -12,7 +12,7 @@ Latest version always at
  
 // Make this the relative path to the images, like &quot;../img&quot; or &quot;random/images/&quot;.
 // If the images are in the same directory, leave it blank.
-$folder = 'images/random';
+$folder = '';
  
  
 // Space seperated list of extensions, you probably won't have to change this.
