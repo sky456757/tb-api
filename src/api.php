@@ -40,7 +40,7 @@ if (!in_array($type, ['song','album','search','artist','playlist','lrc','url','p
 $api=new \Metowolf\Meting($server);
 $api->format(true);
 if ($server == 'netease') {
-    $api->cookie('os=pc; osver=Microsoft-Windows-10-Professional-build-10586-64bit; appver=2.9.1.199099; channel=netease;  __remember_me=true');
+    $api->cookie('os=pc; osver=Microsoft-Windows-10-Professional-build-10586-64bit; appver=2.9.2.199163; MUSIC_U=0ff5dbc42a8584a6724f88933a606bcfe82562bbf8998e1029237709da52ba1605523b417c0f8055de39c620ce8469a8; channel=netease;  __remember_me=true');
 }
 
 if ($type=='lrc') {
