@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta name="google" value="notranslate">
+<meta name="theme-color" content="#000">
+<meta http-equiv="Cache-Control" content="public">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<title>Meting Api</title>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  width: 100%;
+  background: #fafafa;
+}
+body {
+  max-height: 100%;
+  -webkit-overflow-scrolling: touch;
+      -ms-overflow-scrolling: touch;
+          overflow-scrolling: touch;
+}
+body {
+  color: #525252;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  text-rendering: geometricPrecision;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  font-family: -apple-system,'Helvetica Neue',Helvetica,'Nimbus Sans L',Arial,'Liberation Sans','PingFang SC','Hiragino Sans GB','Source Han Sans CN','Source Han Sans SC','Microsoft YaHei','Wenquanyi Micro Hei','WenQuanYi Zen Hei','ST Heiti',SimHei,'WenQuanYi Zen Hei Sharp',sans-serif;
+}
+.content {
+  margin: 0 5%;
+  padding: 10px 0 3px;
+}
+meting-js {
+  background: #fff;
+}
+</style>
+</head>
+<body ontouchstart>
+
+<div class="content">
+  <meting-js
+    server="netease"
+    type="playlist"
+    id="82619039"
+    listmaxheight="450px"
+    theme="orange">
+  </meting-js>
+</div>
+
+<script>var meting_api='api.php?server=:server&type=:type&id=:id'</script>
+<script src="//cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+</body>
+</html>
