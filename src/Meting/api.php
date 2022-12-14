@@ -29,7 +29,7 @@ if (!in_array($type, ['song','album','search','artist','playlist','lrc','url','p
 $api=new \Metowolf\Meting($server);
 $api->format(true);
 if ($server == 'netease') {
-    $api->cookie('os=pc; osver=Microsoft-Windows-10-Professional-build-10586-64bit; appver=2.10.6.200601; MUSIC_U=0ff5dbc42a8584a6724f88933a606bcfe82562bbf8998e1029237709da52ba1605523b417c0f8055de39c620ce8469a8; channel=netease;  __remember_me=true');
+    $api->cookie('SESSIONID-WYYY=vhRgXF%2B0eNn8vG%5ChX3K7z7oq9me%2FUtl7vzJnhuNa4kZ%5CjY%2FCpJcathV9cwKVwP16HP6Y2TK02GHzih8%5C0fJoXMl0xaWayT8O64yQqY65gEm1PGHQ03U%2Bshgta08%2BhhmtrYSiH1nedR0VcSbtqFcgTDoNoMbS5ecIeCHv4P1Ss0e8FEm7%3A1671021803989; _iuqxldmzr_=32; _ntes_nnid=5be693430b46f637e33a08cb4e215956,1671020004063; _ntes_nuid=5be693430b46f637e33a08cb4e215956; NMTID=00OBcLqlcqlsn7dT0s_mIM3OEe1CM0AAAGFEI3EMw; WEVNSM=1.0.0; WNMCID=uqplqi.1671020004730.01.0; WM_NI=l%2BrM9pNvcwrNMMCPyRf%2FNmFJh0o2TgzAQ3Hfn5Q6gLHXxIyBIoE4LyBWmd%2BWG%2B8aztDDC5rLMR70u8OHCreBSGZtFQnc3WIMViE3Mxj%2BdpsbY%2BzdRrhoPjzLgzffLseAREE%3D; WM_NIKE=9ca17ae2e6ffcda170e2e6eeb9e27dabbabba8b54b8aa88ab7c45a968b9f83c152f4939f88e16bacb2b897f72af0fea7c3b92ab0f5beaebc7c8eaaad98f1468f938db1fc5aa6f1828ec542acf0a1d3d76dba9f9fd4cb6eaeeb9fd7e6488c88b8aafc4a8bb18bd5cf738289a385aa5d85f5f882f980889c8dd6f1488f8ef9d1f8348d988d93e84a91999695c55baebdfdb8cc4796b78bd4d074aaf5ac91f26a9bf5b685d17aacb1a08bf948a5a6aa87cf79a79f9ea6c837e2a3; WM_TID=uGrK0NDv1Z9FVUQVFEaVdxZU1fLlil65');
 }
 
 if ($type=='lrc') {
