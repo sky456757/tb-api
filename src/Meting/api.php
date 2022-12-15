@@ -34,7 +34,7 @@ if (AUTH) {
 // 数据格式
 if (in_array($type, ['song', 'playlist'])) {
     header('content-type: application/json; charset=utf-8;');
-} else if (in_array($type, ['name', 'lrc', 'artist'])) {
+} else if (in_array($type, ['title', 'lrc', 'author'])) {
     header('content-type: text/plain; charset=utf-8;');
 }
 
@@ -77,8 +77,8 @@ if ($type == 'playlist') {
     $playlist = array();
     foreach ($data as $song) {
         $playlist[] = array(
-            'name'   => $song->name,
-            'artist' => implode('/', $song->artist),
+            'title'   => $song->name,
+            'author' => implode('/', $song->artist),
             'url'    => API_URI . '?server=' . $song->source . '&type=url&id=' . $song->url_id . (AUTH ? '&auth=' . auth($song->source . 'url' . $song->url_id) : ''),
             'pic'    => API_URI . '?server=' . $song->source . '&type=pic&id=' . $song->pic_id . (AUTH ? '&auth=' . auth($song->source . 'pic' . $song->pic_id) : ''),
             'lrc'    => API_URI . '?server=' . $song->source . '&type=lrc&id=' . $song->lyric_id . (AUTH ? '&auth=' . auth($song->source . 'lrc' . $song->lyric_id) : '')
@@ -94,7 +94,7 @@ if ($type == 'playlist') {
     echo $playlist;
 } else {
     $need_song = !in_array($type, ['url', 'pic', 'lrc']);
-    if ($need_song && !in_array($type, ['name', 'artist', 'song'])) {
+    if ($need_song && !in_array($type, ['title', 'author', 'song'])) {
         echo '{"error":"unknown type"}';
         exit;
     }
@@ -149,11 +149,11 @@ function song2data($api, $song, $type, $id)
 {
     $data = '';
     switch ($type) {
-        case 'name':
+        case 'title':
             $data = $song->name;
             break;
 
-        case 'artist':
+        case 'author':
             $data = implode('/', $song->artist);
             break;
 
@@ -207,8 +207,8 @@ function song2data($api, $song, $type, $id)
 
         case 'song':
             $data = json_encode(array(array(
-                'name'   => $song->name,
-                'artist' => implode('/', $song->artist),
+                'title'   => $song->name,
+                'author' => implode('/', $song->artist),
                 'url'    => API_URI . '?server=' . $song->source . '&type=url&id=' . $song->url_id . (AUTH ? '&auth=' . auth($song->source . 'url' . $song->url_id) : ''),
                 'pic'    => API_URI . '?server=' . $song->source . '&type=pic&id=' . $song->pic_id . (AUTH ? '&auth=' . auth($song->source . 'pic' . $song->pic_id) : ''),
                 'lrc'    => API_URI . '?server=' . $song->source . '&type=lrc&id=' . $song->lyric_id . (AUTH ? '&auth=' . auth($song->source . 'lrc' . $song->lyric_id) : '')
