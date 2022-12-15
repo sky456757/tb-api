@@ -1,5 +1,6 @@
 <?php
 // 设置API路径
+ini_set('display_errors','off');
 define('API_URI', api_uri());
 // 设置中文歌词
 define('TLYRIC', true);
@@ -46,7 +47,7 @@ header('Access-Control-Allow-Methods: GET');
 // you can use 'Meting.php' instead of 'autoload.php'
 include __DIR__ . '/Meting.php';
 
-//use Metowolf\Meting;
+use Metowolf\Meting;
 
 $api = new Meting($server);
 $api->format(true);
