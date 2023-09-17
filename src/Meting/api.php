@@ -41,6 +41,7 @@ if (in_array($type, ['song', 'playlist'])) {
 
 // 允许跨站
 header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: Content-Type');
 header('Access-Control-Allow-Methods: GET');
 
 // include __DIR__ . '/vendor/autoload.php';
