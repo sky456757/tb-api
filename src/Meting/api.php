@@ -12,7 +12,10 @@ define('APCU_CACHE', false);
 // 设置AUTH密钥-更改'meting-secret'
 define('AUTH', false);
 define('AUTH_SECRET', 'meting-secret');
-
+// 允许跨站
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: Content-Type');
+header('Access-Control-Allow-Methods: GET');
 /*if (!isset($_GET['type']) || !isset($_GET['id'])) {
     include __DIR__ . '/public/index.php';
     exit;
@@ -38,11 +41,6 @@ if (in_array($type, ['song', 'playlist'])) {
 } else if (in_array($type, ['title', 'lrc', 'author'])) {
     header('content-type: text/plain; charset=utf-8;');
 }
-
-// 允许跨站
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Headers: Content-Type');
-header('Access-Control-Allow-Methods: GET');
 
 // include __DIR__ . '/vendor/autoload.php';
 // you can use 'Meting.php' instead of 'autoload.php'
