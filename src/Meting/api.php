@@ -43,9 +43,9 @@ if (in_array($type, ['song', 'playlist'])) {
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET');
 
-// include __DIR__ . '/vendor/autoload.php';
+include __DIR__ . '/vendor/autoload.php';
 // you can use 'Meting.php' instead of 'autoload.php'
-include __DIR__ . '/Meting.php';
+// include __DIR__ . '/Meting.php';
 
 use Metowolf\Meting;
 
