@@ -36,9 +36,9 @@ if (AUTH) {
 }
 
 // 数据格式
-if (in_array($type, ['song', 'playlist'])) {
+if (in_array($type, ['song', 'playlist', 'lrc'])) {
     header('content-type: application/json; charset=utf-8;');
-} else if (in_array($type, ['title', 'lrc', 'author'])) {
+} else if (in_array($type, ['title', 'author'])) {
     header('content-type: text/plain; charset=utf-8;');
 }
 
@@ -200,10 +200,6 @@ function return_data($type, $data)
 {
     if (in_array($type, ['url', 'pic'])) {
         header('Location: ' . $data);
-    } elseif (in_array($type, ['lrc'])) {
-        header("Content-Type: application/javascript");
-	echo $data;
-
     } else {
         echo $data;
     }
