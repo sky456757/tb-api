@@ -198,8 +198,12 @@ function song2data($api, $song, $type, $id)
 
 function return_data($type, $data)
 {
-    if (in_array($type, ['url', 'pic', 'lrc'])) {
+    if (in_array($type, ['url', 'pic'])) {
         header('Location: ' . $data);
+    } elseif (in_array($type, ['lrc'])) {
+        header("Content-Type: application/javascript");
+	echo $data;
+
     } else {
         echo $data;
     }
