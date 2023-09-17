@@ -199,7 +199,7 @@ function song2data($api, $song, $type, $id)
 
 function return_data($type, $data)
 {
-    if (in_array($type, ['url', 'pic'])) {
+    if (in_array($type, ['url', 'pic', 'lrc'])) {
         header('Location: ' . $data);
     } else {
         echo $data;
